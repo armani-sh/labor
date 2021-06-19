@@ -25,6 +25,10 @@ const routes: Array<RouteRecordRaw> = [
         path: "/GetLab",
         component: () => import("/src/components/GetLab.vue"),
       },
+      {
+        path: "/TeacherInform",
+        component: () => import("/src/components/TeacherInform.vue"),
+      },
     ],
   },
   {
@@ -34,6 +38,14 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/AddCourse",
         component: () => import("/src/components/AddCourse.vue"),
+      },
+      {
+        path: "/AddCourse1",
+        component: () => import("/src/components/AddCourse1.vue"),
+      },
+      {
+        path: "/AddCourse3",
+        component: () => import("/src/components/AddCourse3.vue"),
       },
       {
         path: "/GetCourse",

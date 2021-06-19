@@ -26,7 +26,7 @@
         </el-menu-item-group>
         <el-menu-item-group title="编辑">
           <li style="list-style: none">
-            <router-link to="/AddCourse"
+            <router-link to="/AddCourse1"
               ><el-menu-item index="1-3">添加课程</el-menu-item>
             </router-link>
           </li>
@@ -82,12 +82,14 @@ export default {
   vertical-align: top;
   margin: 30px;
   width: 75%;
-  padding-top: 3%;
 }
 .router-link-active {
   text-decoration: none;
 }
 a {
+  color: inherit;
   text-decoration: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 </style>

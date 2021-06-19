@@ -1,5 +1,11 @@
 <template>
   <div class="login-container">
+    <div style="float: left; margin: 100px auto; margin-left: 10%">
+      <img
+        src="https://graph.baidu.com/thumb/v4/4133807849,2013534059.jpg"
+        class="image"
+      />
+    </div>
     <el-form
       :model="ruleForm2"
       :rules="rules2"
@@ -46,8 +52,8 @@ export default {
     return {
       en: false,
       ruleForm2: {
-        username: "admin",
-        password: "admin",
+        username: "shuhang",
+        password: "shuhang",
       },
       rules2: {
         username: [
@@ -71,8 +77,8 @@ export default {
           if (valid) {
             this.logining = true;
             if (
-              this.ruleForm2.username === "admin" &&
-              this.ruleForm2.password === "admin"
+              this.ruleForm2.username === "shuhang" &&
+              this.ruleForm2.password === "shuhang"
             ) {
               this.logining = false;
               sessionStorage.setItem("user", this.ruleForm2.username);
@@ -116,6 +122,8 @@ export default {
   background: #fff;
   border: 1px solid #eaeaea;
   box-shadow: 0 0 25px #cac6c6;
+  float: left;
+  margin-left: 15%;
 }
 label.el-checkbox.rememberme {
   margin: 0px 0px 15px;

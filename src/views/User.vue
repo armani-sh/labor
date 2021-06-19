@@ -2,7 +2,7 @@
   <div class="headerWapper">
     <header class="header">
       <div class="container">
-        <el-tag class="phot">选课系统</el-tag>
+        <el-tag class="phot">实验室预约系统</el-tag>
         <ul class="nav">
           <li>
             <el-popover
@@ -53,7 +53,7 @@
                 >
                 <el-button type="primary" size="mini"
                   ><a
-                    href="https://github.com/armani-sh/vue-examples-shu"
+                    href="https://github.com/armani-sh/labor.git"
                     target="view_window"
                     >确定</a
                   ></el-button
@@ -143,8 +143,5 @@ a {
   display: block;
   border: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  -webkit-user-select: none;
-  -moz-user-focus: none;
-  -moz-user-select: none;
 }
 </style>

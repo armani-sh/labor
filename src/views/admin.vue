@@ -34,7 +34,11 @@
       </el-submenu>
       <el-menu-item index="2">
         <i class="el-icon-menu"></i>
-        <template #title>教师信息管理</template>
+        <template #title
+          ><router-link to="/TeacherInform"
+            >教师信息管理
+          </router-link></template
+        >
       </el-menu-item>
       <el-menu-item index="3" disabled>
         <i class="el-icon-document"></i>
@@ -87,6 +91,9 @@ export default {
   text-decoration: none;
 }
 a {
+  color: inherit;
   text-decoration: none;
+  border: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 </style>

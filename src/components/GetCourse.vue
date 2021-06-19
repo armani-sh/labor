@@ -1,5 +1,5 @@
 <template>
-  <el-row class="row" v-loading.lock="fullscreenLoading">
+  <el-row class="row" v-loading.lock="fullscreenLoading" style="margin-top: 6%">
     <el-col
       :span="6"
       v-for="(o, index) in pages"
@@ -212,7 +212,7 @@ export default defineComponent({
 <style scoped>
 .page {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .row {
   width: 100%;
