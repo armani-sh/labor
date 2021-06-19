@@ -14,31 +14,31 @@
       <el-submenu index="1">
         <template #title>
           <i class="el-icon-location"></i>
-          <span>实验室管理</span>
+          <span>课程管理</span>
         </template>
         <el-menu-item-group>
-          <template #title>使用情况</template>
+          <template #title>已有课程</template>
           <li style="list-style: none">
-            <router-link to="/GetLab"
+            <router-link to="/GetCourse"
               ><el-menu-item index="1-1">详情</el-menu-item>
             </router-link>
           </li>
         </el-menu-item-group>
         <el-menu-item-group title="编辑">
           <li style="list-style: none">
-            <router-link to="/AddLab1"
-              ><el-menu-item index="1-3">添加实验室</el-menu-item>
+            <router-link to="/AddCourse"
+              ><el-menu-item index="1-3">添加课程</el-menu-item>
             </router-link>
           </li>
         </el-menu-item-group>
       </el-submenu>
       <el-menu-item index="2">
         <i class="el-icon-menu"></i>
-        <template #title>教师信息管理</template>
+        <template #title>未配置</template>
       </el-menu-item>
       <el-menu-item index="3" disabled>
         <i class="el-icon-document"></i>
-        <template #title>导航三</template>
+        <template #title>未配置</template>
       </el-menu-item>
     </el-menu>
   </div>
@@ -82,6 +82,7 @@ export default {
   vertical-align: top;
   margin: 30px;
   width: 75%;
+  padding-top: 3%;
 }
 .router-link-active {
   text-decoration: none;
