@@ -1,10 +1,7 @@
 <template>
   <div class="login-container">
     <div style="float: left; margin: 100px auto; margin-left: 10%">
-      <img
-        src="https://graph.baidu.com/thumb/v4/4133807849,2013534059.jpg"
-        class="image"
-      />
+      <img src="https://graph.baidu.com/thumb/v4/4133807849,2013534059.jpg" />
     </div>
     <el-form
       :model="ruleForm2"

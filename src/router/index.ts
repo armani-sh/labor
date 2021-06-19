@@ -2,6 +2,10 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
+    path: "/",
+    redirect: "/login",
+  },
+  {
     path: "/login",
     component: () => import("/src/views/login.vue"),
   },
@@ -66,6 +70,13 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+});
+
+router.beforeEach((to, from) => {
+  const loginUserName = sessionStorage.getItem("user") as string;
+  if (to.path != "/login" && loginUserName == null) {
+    router.push("/");
+  }
 });
 
 export default router;

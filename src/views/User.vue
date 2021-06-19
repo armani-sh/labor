@@ -82,6 +82,7 @@ export default defineComponent({
     const visiblea = ref(false);
     const tologin = () => {
       router.push("/login");
+      sessionStorage.removeItem("user");
     };
     return {
       visible,
